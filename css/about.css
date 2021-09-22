@@ -1,0 +1,224 @@
+
+html{
+    scroll-behavior: smooth;
+}
+/*start global rules*/
+
+*{
+    -webkit-box-sizing:border-box ;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box  ;
+}
+body{
+    font-family: "Work Sans",sans-serif;
+}
+/*small*/
+@media (min-width:768px){
+    .container{
+        width:750px;
+    }
+}
+
+/*med*/
+@media (min-width:992px){
+    .container{
+        font:970px;
+    }
+}
+
+/*large*/
+@media (min-width:1200px){
+    .container{
+        width:1170px;
+    }
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*End Global rules*/
+/*start nav-bar*/
+.header{
+    background-color: #04aa6d; 
+    color: white;
+    padding: 30px;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.header .container .links{
+    position: relative;
+}
+.header .container .links .icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; 
+    width: 35px;
+}
+.header .container .links .icon:hover{
+    cursor: pointer;
+}
+.header .container .links .icon span{
+    background-color: white; 
+    height: 3px;
+    margin-bottom: 5px;
+}
+
+.header .container .links .icon span:first-child{
+    width: 100%;
+}
+.header .container .links .icon span:nth-child(2){
+    width: 60%;
+}
+.header .container .links .icon :last-child{
+    width: 100%;
+}
+.header .links ul{
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
+    background-color: #F6F6F6;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 15px);
+    list-style: none;
+    display: none;
+    z-index: 1;
+}
+
+
+
+.header .container .links ul li{
+    text-decoration: none;
+    border-bottom: 2px solid teal;
+
+}
+.header .container .links ul li:hover{
+    background-color: #198754;
+ 
+    
+}
+.header .container .links ul li:hover a{
+    color: #fff;
+}
+
+
+
+.header .container .links ul li a{
+    color: teal;
+    font-size: 18PX;   
+    font-weight: 600;
+    display: block;
+    padding: 30px 15px;
+
+   
+}
+.header .container .links ul li a:hover{
+    text-decoration: none;
+}
+/*start land*/
+.land{
+    background-image: url(../img/about.jpg);
+    height: 40vh;
+    background-size: cover;
+    position: relative;
+}
+/*end land*/
+/*start his*/
+.cont .container{
+    margin-top: 100px;
+
+}
+
+.cont .container .his h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: #01937C  ;
+    margin-bottom: 50px;
+}
+.cont .container .his p{
+    line-height: 1.8;
+    color: #696969;
+}
+/*end his*/
+/*start ambitious*/
+.cont .container{
+    margin-top: 125px;
+}
+.ambitious{
+    background-color: #ececec;
+}
+.ambitious .container {
+    display: grid;
+    grid-template-rows: 3;
+    margin-top: 100px;
+}
+.ambitious .container  .rows{
+    display: flex;
+}
+.ambitious .container  .rows .icon{
+    font-size: 50px;
+    color: #198754;
+    margin-right: 10px;
+}
+.ambitious .container  .rows .text{
+    margin-top: 35px;
+    
+}
+.ambitious .container  .rows .text h4{
+    color: #45526C;
+    font-size: 45px;
+}
+.ambitious .container  .rows .text p{
+    line-height: 1.8;
+}
+/*end ambitious*/
+/*start founders*/
+.founders .container{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    justify-items: center;
+}
+.founders .container .col .person{
+    display: flex;
+}
+.founders .container .col .person i{
+    font-size: 60px;
+    padding-right: 20px;
+    
+}
+.founders .container .col .person .text h4{
+    color: #01937C;
+}
+
+/*end founders*/
+/*end nav-bar*/
+
+
+
+
+
+/*end nav-bar*/
+
+
+
+
+
+
+
+/*start footer*/
+.footer{
+    padding: 30px;
+    text-align: center;
+    background-color:#04aa6d ;
+    margin-top: 50px;
+    color: #fff;
+}
+/*end footer*/
